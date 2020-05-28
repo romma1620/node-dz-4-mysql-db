@@ -17,6 +17,7 @@ module.exports = {
         }catch (e) {
             res.json(e)
         }
+        res.end()
     },
 
     deleteUser: async (req, res) => {
@@ -25,7 +26,6 @@ module.exports = {
         }catch (e) {
             res.json(e)
         }
-
 
         res.end()
     },
@@ -36,8 +36,6 @@ module.exports = {
         }catch (e) {
             res.json(e)
         }
-
-
 
         res.end()
     }
