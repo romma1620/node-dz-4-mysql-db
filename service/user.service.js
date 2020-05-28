@@ -24,7 +24,7 @@ module.exports = {
         const UserModel = db.getModel('User')
         return UserModel.destroy({
             where: {
-                id: id
+                id
             }
         })
     },
@@ -32,10 +32,10 @@ module.exports = {
     updateUser: (id, name) => {
         const UserModel = db.getModel('User')
         return UserModel.update({
-            name: name
+            name
         },{
             where: {
-                id: id
+                id
             }
         })
 
