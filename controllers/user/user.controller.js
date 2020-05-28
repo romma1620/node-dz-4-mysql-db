@@ -6,6 +6,11 @@ module.exports = {
         res.json(users)
     },
 
+    getUser: async (req, res) => {
+        let users = await userService.getUser(req.params.id);
+        res.json(users)
+    },
+
     updateUser: async (req, res) => {
         try {
             await userService.updateUser(req.body.id, req.body.name);

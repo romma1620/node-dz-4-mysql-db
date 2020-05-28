@@ -8,6 +8,12 @@ module.exports = {
 
     },
 
+    getUser: (id) => {
+        const UserModel = db.getModel('User')
+        return UserModel.findByPk(id)
+    },
+
+
     createUser: (user) => {
         const UserModel = db.getModel('User')
         return  UserModel.create(user)

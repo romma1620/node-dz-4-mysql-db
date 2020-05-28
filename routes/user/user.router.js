@@ -9,6 +9,8 @@ userRouter.post('/', userController.createUser);
 
 userRouter.get('/', userController.getAllUsers);
 
+userRouter.get('/:id', userController.getUser);
+
 userRouter.put('/', userController.updateUser);
 
 userRouter.delete('/:id', userController.deleteUser);
